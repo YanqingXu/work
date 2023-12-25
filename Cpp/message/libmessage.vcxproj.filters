@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="definition">
+      <UniqueIdentifier>{a97a6c5d-3558-405c-a0ae-d73260099007}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="csmessage">
+      <UniqueIdentifier>{e9c8328a-6d06-4b82-aaba-afc2ddd128a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="generator">
+      <UniqueIdentifier>{0e9c00fb-c4bc-4ada-8f49-dbff6363e8a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dbmessage">
+      <UniqueIdentifier>{f1060aaa-03c4-492a-8d6b-e2865ca7d31b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="innermessage">
+      <UniqueIdentifier>{b6879cac-a47c-4d16-acbb-3ae3c9ab6ed3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ssmessage">
+      <UniqueIdentifier>{8f4d756b-45e6-49e2-b766-ed087732be85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="centermessage">
+      <UniqueIdentifier>{921d8208-e3b8-44b4-a76f-58f33aba65b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="crossmessage">
+      <UniqueIdentifier>{75048346-5273-451f-beaa-7f55eda46fb2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MsgAuth.h">
+      <Filter>csmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgGMaster.h">
+      <Filter>csmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgGuild.h">
+      <Filter>csmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgItem.h">
+      <Filter>csmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgLogin.h">
+      <Filter>csmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPet.h">
+      <Filter>csmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPlayer.h">
+      <Filter>csmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgQuest.h">
+      <Filter>csmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgRelationship.h">
+      <Filter>csmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgScene.h">
+      <Filter>csmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgShop.h">
+      <Filter>csmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgTeam.h">
+      <Filter>csmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgTest.h">
+      <Filter>csmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgTrade.h">
+      <Filter>csmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgWorld.h">
+      <Filter>csmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="DBMessage.h">
+      <Filter>dbmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgMail.h">
+      <Filter>csmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgRegister.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="generator\MsgRegisterTemplate.h">
+      <Filter>generator</Filter>
+    </ClInclude>
+    <ClInclude Include="generator\MsgTemplate.h">
+      <Filter>generator</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgSystemInfo.h">
+      <Filter>csmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgControl.h">
+      <Filter>innermessage</Filter>
+    </ClInclude>
+    <ClInclude Include="DBMsgCross.h">
+      <Filter>dbmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="DBMsgGuild.h">
+      <Filter>dbmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="DBMsgItem.h">
+      <Filter>dbmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="DBMsgLogin.h">
+      <Filter>dbmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="DBMsgMail.h">
+      <Filter>dbmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="DBMsgPet.h">
+      <Filter>dbmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="DBMsgPlayer.h">
+      <Filter>dbmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="DBMsgQuest.h">
+      <Filter>dbmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="DBMsgRecords.h">
+      <Filter>dbmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="DBMsgRelationship.h">
+      <Filter>dbmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="DBMsgTest.h">
+      <Filter>dbmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="DBMsgWorld.h">
+      <Filter>dbmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="DBMsgArena.h">
+      <Filter>dbmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="DBMsgAuth.h">
+      <Filter>dbmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="definition.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EventDefinition.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgVersatility.h">
+      <Filter>csmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgField.h">
+      <Filter>csmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="DBMsgConsignment.h">
+      <Filter>dbmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgConsignment.h">
+      <Filter>csmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgHoliday.h">
+      <Filter>csmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="DBMsgHoliday.h">
+      <Filter>dbmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgChat.h">
+      <Filter>csmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgServerLogic.h">
+      <Filter>ssmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgCenter.h">
+      <Filter>centermessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgCross.h">
+      <Filter>crossmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgWrapper.h">
+      <Filter>crossmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgZhanDui.h">
+      <Filter>csmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="DBMsgZhanDui.h">
+      <Filter>dbmessage</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="generator\compile.lua">
+      <Filter>generator</Filter>
+    </None>
+    <None Include="generator\generate.bat">
+      <Filter>generator</Filter>
+    </None>
+    <None Include="generator\generate.lua">
+      <Filter>generator</Filter>
+    </None>
+    <None Include="generator\do_enum.lua">
+      <Filter>generator</Filter>
+    </None>
+    <None Include="definition\MsgGMaster.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\MsgGuild.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\MsgItem.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\MsgLogin.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\MsgMail.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\MsgPet.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\MsgPlayer.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\MsgQuest.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\MsgRelationship.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\MsgScene.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\MsgShop.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\MsgSystemInfo.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\MsgTeam.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\MsgTest.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\MsgTrade.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\MsgWorld.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\DBMsgArena.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\DBMsgAuth.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\DBMsgCross.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\DBMsgGuild.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\DBMsgItem.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\DBMsgLogin.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\DBMsgMail.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\DBMsgPet.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\DBMsgPlayer.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\DBMsgQuest.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\DBMsgRecords.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\DBMsgRelationship.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\DBMsgTest.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\DBMsgWorld.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\MsgAuth.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\MsgCheck.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\MsgControl.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\MsgCross.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\DBMsgHoliday.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\MsgHoliday.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\MsgConsignment.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\DBMsgConsignment.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\MsgServerLogic.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\MsgCenter.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\MsgHttp.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\MsgGSToGS.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\MsgZhanDui.lua">
+      <Filter>definition</Filter>
+    </None>
+    <None Include="definition\DBMsgZhanDui.lua">
+      <Filter>definition</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MsgRegister.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgField.cpp">
+      <Filter>csmessage</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgVersatility.cpp">
+      <Filter>csmessage</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

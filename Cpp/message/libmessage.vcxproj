@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DBMessage.h" />
+    <ClInclude Include="DBMsgArena.h" />
+    <ClInclude Include="DBMsgAuth.h" />
+    <ClInclude Include="DBMsgConsignment.h" />
+    <ClInclude Include="DBMsgCross.h" />
+    <ClInclude Include="DBMsgGuild.h" />
+    <ClInclude Include="DBMsgHoliday.h" />
+    <ClInclude Include="DBMsgItem.h" />
+    <ClInclude Include="DBMsgLogin.h" />
+    <ClInclude Include="DBMsgMail.h" />
+    <ClInclude Include="DBMsgPet.h" />
+    <ClInclude Include="DBMsgPlayer.h" />
+    <ClInclude Include="DBMsgQuest.h" />
+    <ClInclude Include="DBMsgRecords.h" />
+    <ClInclude Include="DBMsgRelationship.h" />
+    <ClInclude Include="DBMsgTest.h" />
+    <ClInclude Include="DBMsgWorld.h" />
+    <ClInclude Include="DBMsgZhanDui.h" />
+    <ClInclude Include="definition.h" />
+    <ClInclude Include="EventDefinition.h" />
+    <ClInclude Include="generator\MsgRegisterTemplate.h" />
+    <ClInclude Include="generator\MsgTemplate.h" />
+    <ClInclude Include="MsgAuth.h" />
+    <ClInclude Include="MsgCenter.h" />
+    <ClInclude Include="MsgChat.h" />
+    <ClInclude Include="MsgConsignment.h" />
+    <ClInclude Include="MsgControl.h" />
+    <ClInclude Include="MsgCross.h" />
+    <ClInclude Include="MsgWrapper.h" />
+    <ClInclude Include="MsgField.h" />
+    <ClInclude Include="MsgGMaster.h" />
+    <ClInclude Include="MsgGuild.h" />
+    <ClInclude Include="MsgHoliday.h" />
+    <ClInclude Include="MsgItem.h" />
+    <ClInclude Include="MsgLogin.h" />
+    <ClInclude Include="MsgMail.h" />
+    <ClInclude Include="MsgPet.h" />
+    <ClInclude Include="MsgPlayer.h" />
+    <ClInclude Include="MsgQuest.h" />
+    <ClInclude Include="MsgRegister.h" />
+    <ClInclude Include="MsgRelationship.h" />
+    <ClInclude Include="MsgScene.h" />
+    <ClInclude Include="MsgServerLogic.h" />
+    <ClInclude Include="MsgShop.h" />
+    <ClInclude Include="MsgSystemInfo.h" />
+    <ClInclude Include="MsgTeam.h" />
+    <ClInclude Include="MsgTest.h" />
+    <ClInclude Include="MsgTrade.h" />
+    <ClInclude Include="MsgVersatility.h" />
+    <ClInclude Include="MsgWorld.h" />
+    <ClInclude Include="MsgZhanDui.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="definition\DBMsgArena.lua" />
+    <None Include="definition\DBMsgAuth.lua" />
+    <None Include="definition\DBMsgConsignment.lua" />
+    <None Include="definition\DBMsgCross.lua" />
+    <None Include="definition\DBMsgGuild.lua" />
+    <None Include="definition\DBMsgHoliday.lua" />
+    <None Include="definition\DBMsgItem.lua" />
+    <None Include="definition\DBMsgLogin.lua" />
+    <None Include="definition\DBMsgMail.lua" />
+    <None Include="definition\DBMsgPet.lua" />
+    <None Include="definition\DBMsgPlayer.lua" />
+    <None Include="definition\DBMsgQuest.lua" />
+    <None Include="definition\DBMsgRecords.lua" />
+    <None Include="definition\DBMsgRelationship.lua" />
+    <None Include="definition\DBMsgTest.lua" />
+    <None Include="definition\DBMsgWorld.lua" />
+    <None Include="definition\DBMsgZhanDui.lua" />
+    <None Include="definition\MsgAuth.lua" />
+    <None Include="definition\MsgCenter.lua" />
+    <None Include="definition\MsgCheck.lua" />
+    <None Include="definition\MsgConsignment.lua" />
+    <None Include="definition\MsgControl.lua" />
+    <None Include="definition\MsgCross.lua" />
+    <None Include="definition\MsgGMaster.lua" />
+    <None Include="definition\MsgGSToGS.lua" />
+    <None Include="definition\MsgGuild.lua" />
+    <None Include="definition\MsgHoliday.lua" />
+    <None Include="definition\MsgHttp.lua" />
+    <None Include="definition\MsgItem.lua" />
+    <None Include="definition\MsgLogin.lua" />
+    <None Include="definition\MsgMail.lua" />
+    <None Include="definition\MsgPet.lua" />
+    <None Include="definition\MsgPlayer.lua" />
+    <None Include="definition\MsgQuest.lua" />
+    <None Include="definition\MsgRelationship.lua" />
+    <None Include="definition\MsgScene.lua" />
+    <None Include="definition\MsgServerLogic.lua" />
+    <None Include="definition\MsgShop.lua" />
+    <None Include="definition\MsgSystemInfo.lua" />
+    <None Include="definition\MsgTeam.lua" />
+    <None Include="definition\MsgTest.lua" />
+    <None Include="definition\MsgTrade.lua" />
+    <None Include="definition\MsgWorld.lua" />
+    <None Include="definition\MsgZhanDui.lua" />
+    <None Include="generator\compile.lua" />
+    <None Include="generator\do_enum.lua" />
+    <None Include="generator\generate.bat" />
+    <None Include="generator\generate.lua" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MsgField.cpp" />
+    <ClCompile Include="MsgRegister.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/bigobj</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">/bigobj</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="MsgVersatility.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B7FDCF23-E150-4ADF-9C12-63A9FF36E1A7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libmessage</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>$(ProjectName)</TargetName>
+    <OutDir>$(SolutionDir)_tmp\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)_tmp\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(SolutionDir)_tmp\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)_tmp\$(Configuration)\$(ProjectName)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..;..\external\libcommon\include</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..;..\external\libcommon\include</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

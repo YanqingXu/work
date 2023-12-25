@@ -1,0 +1,352 @@
+messages = {
+	---- don't use 1 3 5 7 as id
+	--{
+	--	define = "struct", name = "DBArenaData",
+	--	attributes =
+	--	{
+	--		{type = "int16", name = "rank"},
+	--		{type = "int32", name = "pid"},
+	--		{type = "int16", name = "cid"},
+	--		{type = "string",name = "name"},
+	--		{type = "int16", name = "level"},
+	--		{type = "int8",	name = "faction"},
+	--	},
+	--},
+	--{
+	--	define = "class", name = "MsgDBArenaLoad",category = "MSG_CATEGORY_DB_ARENA" , id = 2 ,base = "MessageEx",
+	--	attributes =
+	--	{
+	--		{type = "DBArenaData", name = "mdata", vector = true},
+	--	},
+	--},
+    --
+	--{
+	--	define = "class", name = "MsgDBArenaRecordLoad",category = "MSG_CATEGORY_DB_ARENA" , id = 4 ,base = "MessageEx",
+	--	attributes =
+	--	{
+	--		{type = "DBArenaData", name = "mdata", vector = true},
+	--	},
+	--},
+    --
+	--{
+	--	define = "struct" ,name = "fightdata",
+	--	attributes =
+	--	{
+	--		{type = "int32", name = "acid"},
+	--		{type = "int32", name = "dtype"},
+	--		{type = "int32", name = "pos"},
+	--		{type = "int32", name = "data"},
+	--	},
+	--},
+    --
+	--{
+	--	define = "class", name = "MsgDBArenaFightUpdate", category = "MSG_CATEGORY_DB_ARENA", id = 5, base = "MessageEx",
+	--	attributes =
+	--	{
+	--		{type = "int64", name = "reid"},
+	--		{type = "fightdata", name = "combatdata"},
+	--	},
+	--},
+    --
+	--{
+	--	define = "struct" ,name = "DBPlayerArenaRecord",
+	--	attributes =
+	--	{
+	--		{type = "int16", name = "cnt"},
+	--		{type = "int32", name = "epid"},
+	--		{type = "string",name = "ename"},
+	--		{type = "int8",  name = "result"},
+	--		{type = "int32", name = "rank"},
+	--		{type = "int8",  name = "rankresult"},
+	--		{type = "int64", name = "recordid"},
+	--		{type = "int32", name = "recordtime"},
+	--		{type = "int8",  name = "FightReason"},
+	--	}
+	--},
+    --
+	--{
+	--	define = "class", name = "MsgDBPlayerArenaRecordUpdate", category = "MSG_CATEGORY_DB_ARENA", id = 8, base = "MessageEx",
+	--	attributes =
+	--	{
+	--		{type = "int32", name = "pid"},
+	--		{type = "DBPlayerArenaRecord", name = "recorder"},
+	--	},
+	--},
+    --
+    --
+	--{
+	--	define = "class", name = "MsgDBGetArenaFightID", category = "MSG_CATEGORY_DB_ARENA", id = 9, base = "MessageEx",
+	--	attributes =
+	--	{
+	--		{type = "int64", name = "reid"},
+	--		{type = "int32", name = "epid"},
+	--	},
+	--},
+    --
+	--{
+	--	define = "class", name = "MsgDBArenaBossRecord", category = "MSG_CATEGORY_DB_ARENA", id = 20 ,base = "MessageEx",
+	--	attributes =
+	--	{
+	--		{type = "int8" ,name = "faction"},
+	--		{type = "int32", name = "level"},
+	--		{type = "int32", name = "cid"},
+	--		{type = "string", name = "BossName"},
+	--		{type = "int32",  name = "Attack"},
+	--		{type = "int32",  name = "Speed"},
+	--		{type = "int32",  name = "Hit"},
+	--		{type = "int32",  name = "Dodge"},
+	--		{type = "int32",  name = "Crit"},
+	--		{type = "int32",  name = "Resist"},
+	--		{type = "int32",  name = "mBlock"},
+	--		{type = "int32",  name = "mBreak"},
+	--	},
+	--},
+    --
+	--{
+	--	define = "struct", name = "ArenaBossData",
+	--	attributes =
+	--	{
+	--		{type = "int8" ,name = "faction"},
+	--		{type = "int32", name = "level"},
+	--		{type = "int32", name = "cid"},
+	--		{type = "string", name = "BossName"},
+	--		{type = "int32",  name = "Attack"},
+	--		{type = "int32",  name = "Speed"},
+	--		{type = "int32",  name = "Hit"},
+	--		{type = "int32",  name = "Dodge"},
+	--		{type = "int32",  name = "Crit"},
+	--		{type = "int32",  name = "Resist"},
+	--		{type = "int32",  name = "mBlock"},
+	--		{type = "int32",  name = "mBreak"},
+	--	}
+	--},
+	--{
+	--	define = "class", name = "MsgDBArenaBossLoad", category = "MSG_CATEGORY_DB_ARENA", id = 21 ,base = "MessageEx",
+	--	attributes =
+	--	{
+	--		{type = "ArenaBossData", name = "BossData", vector = true}
+	--	},
+	--},
+    --
+	--{
+	--	define = "class", name = "MsgDBArenaBossDelete", category = "MSG_CATEGORY_DB_ARENA", id = 22 ,base = "MessageEx",
+	--	attributes =
+	--	{
+	--	},
+	--},
+    --
+	--{
+	--	define = "class", name = "MsgDBArenaGetReward", category = "MSG_CATEGORY_DB_ARENA", id = 23 ,base = "MessageEx",
+	--	attributes =
+	--	{
+	--		{type = "int32", name = "pid"},
+	--	},
+	--},
+    --
+	--{
+	--	define = "struct", name = "DBArenaRecord",
+	--	attributes =
+	--	{
+	--		{type = "int32", name = "tid"},
+	--		{type = "int32", name = "master"},
+	--		{type = "int32", name = "rank"},
+	--		{type = "int32", name = "win"},
+	--		{type = "int32", name = "fight"},
+	--		{type = "int32", name = "fightcnt"},
+	--		{type = "string", name = "name"},
+	--		{type = "string", name = "needjob"},
+	--		{type = "int16", name = "recruit"},
+	--	},
+	--},
+    --
+	--{
+	--	define = "class", name = "MsgDBArenaRecorderAdd", category = "MSG_CATEGORY_DB_ARENA", id = 24 ,base = "MessageEx",
+	--	attributes =
+	--	{
+	--		{type = "int32", name = "tid"},
+	--		{type = "int32", name = "master"},
+	--		{type = "int32", name = "rank"},
+	--		{type = "int32", name = "win"},
+	--		{type = "int32", name = "fight"},
+	--		{type = "int32", name = "fightcnt"},
+	--		{type = "string", name = "name"},
+	--		{type = "string", name = "needjob"},
+	--	},
+	--},
+    --
+	--{
+	--	define = "struct", name = "DBArenaDatas",
+	--	attributes =
+	--	{
+	--		{type = "int32", name = "pid"},
+	--		{type = "int16", name = "wincnt"},
+	--		{type = "int16", name = "job"},
+	--		{type = "int16", name = "gender"},
+	--		{type = "int32", name = "cloth"},
+	--		{type = "int32", name = "weapon"},
+	--		{type = "int32", name = "wing"},
+	--		{type = "int16", name = "recruit"},
+	--		{type = "string", name = "name"},
+	--	},
+	--},
+    --
+	--{
+	--	define = "class", name = "MsgDBArenaRecorderLoad", category = "MSG_CATEGORY_DB_ARENA", id = 25 ,base = "MessageEx",
+	--	attributes =
+	--	{
+	--		{type = "DBArenaRecord", name = "Records", vector = true},
+	--	},
+	--},
+    --
+	--{
+	--	define = "class", name = "MsgDBArenaAddMember", category = "MSG_CATEGORY_DB_ARENA", id = 26 ,base = "MessageEx",
+	--	attributes =
+	--	{
+	--		{type = "int32", name = "tid"},
+	--		{type = "int32", name = "pid"},
+	--		{type = "int32", name = "rank"},
+	--		{type = "int32", name = "win"},
+	--		{type = "int32", name = "fight"},
+	--		{type = "int16", name = "level"},
+	--	},
+	--},
+    --
+	--{
+	--	define = "class", name = "MsgDBArenaTeamLoadMember", category = "MSG_CATEGORY_DB_ARENA", id = 27 ,base = "MessageEx",
+	--	attributes =
+	--	{
+	--		{type = "int32", name = "tid"},
+	--		{type = "DBArenaDatas", name = "members" , vector = true},
+	--	},
+	--},
+    --
+	--{
+	--	define = "class", name = "MsgDBArenaLoadTeamAid", category = "MSG_CATEGORY_DB_ARENA", id = 28 ,base = "MessageEx",
+	--	attributes =
+	--	{
+	--		{type = "int32", name = "aid"},
+	--		{type = "int32", name = "pid"},
+	--	},
+	--},
+    --
+	--{
+	--	define = "class", name = "MsgDBArenaTeamJoinMember", category = "MSG_CATEGORY_DB_ARENA", id = 29 ,base = "MessageEx",
+	--	attributes =
+	--	{
+	--		{type = "int32", name = "tid"},
+	--		{type = "int32", name = "pid"},
+	--		{type = "int16", name = "recruit"},
+	--		{type = "int16", name = "membercnt"},
+	--	},
+	--},
+    --
+	--{
+	--	define = "class", name = "MsgDBArenaTeamDisSovleMember", category = "MSG_CATEGORY_DB_ARENA", id = 30 ,base = "MessageEx",
+	--	attributes =
+	--	{
+	--		{type = "int32", name = "tid"},
+	--		{type = "int32", name = "rank"},
+	--	},
+	--},
+    --
+	--{
+	--	define = "class", name = "MsgDBArenaTeamRemoveMember", category = "MSG_CATEGORY_DB_ARENA", id = 31 ,base = "MessageEx",
+	--	attributes =
+	--	{
+	--		{type = "int32", name = "tid"},
+	--		{type = "int32", name = "pid"},
+	--	},
+	--},
+    --
+	--{
+	--	define = "struct" ,name = "DBArenaMembers",
+	--	attributes =
+	--	{
+	--		{type = "int32", name = "pid"},
+	--		{type = "int32", name = "tid"},
+	--		{type = "int32", name = "rank"},
+	--		{type = "int32", name = "win"},
+	--		{type = "int32", name = "level"},
+    --
+	--		{type = "int16", name = "job"},
+	--		{type = "int16", name = "gender"},
+	--		{type = "int32", name = "cloth"},
+	--		{type = "int32", name = "weapon"},
+	--		{type = "int32", name = "wing"},
+	--		{type = "int16", name = "wincnt"},
+	--		{type = "int32", name = "combat"},
+	--		{type = "string", name = "name"},   
+	--	}
+	--},
+    --
+	--{
+	--	define = "class", name = "MsgDBArenaMemberRecorder", category = "MSG_CATEGORY_DB_ARENA", id = 32 ,base = "MessageEx",
+	--	attributes =
+	--	{
+	--		{type = "DBArenaMembers", name = "members" , vector = true},
+	--	},
+	--},
+    --
+	--{
+	--	define = "class", name = "MsgDBArenaDismssalRecorder", category = "MSG_CATEGORY_DB_ARENA", id = 33 ,base = "MessageEx",
+	--	attributes =
+	--	{
+	--		{type = "int32", name = "memberId" },
+	--		{type = "int32", name = "teamId"   },
+	--	},
+	--},
+    --
+	--{
+	--	define = "class", name = "MsgDBArenaChangeMsRecorder", category = "MSG_CATEGORY_DB_ARENA", id = 34 ,base = "MessageEx",
+	--	attributes =
+	--	{
+	--		{type = "int32", name = "memberId" },
+	--		{type = "int32", name = "teamId"   },
+	--	},
+	--},
+    --
+	--{
+	--	define = "class", name = "MsgDBArenaChangeRank", category = "MSG_CATEGORY_DB_ARENA", id = 35 ,base = "MessageEx",
+	--	attributes =
+	--	{
+	--		{type = "int16", name = "isTeam" },
+	--		{type = "int32", name = "attackId"   },
+	--		{type = "int32", name = "beAttackId"   },
+	--		{type = "int32", name = "attackNowRank"   },
+	--		{type = "int32", name = "beAttackNowRank"   },
+	--	},
+	--},
+	--
+	--{
+	--	define = "class", name = "MsgDBArenaMemberInfoUpdata", category = "MSG_CATEGORY_DB_ARENA", id = 36 ,base = "MessageEx",
+	--	attributes =
+	--	{
+	--		{type = "int32", name = "tid"},
+	--		{type = "int32", name = "pid"},
+	--		{type = "int32", name = "rank"},
+	--		{type = "int32", name = "win"},
+	--		{type = "int32", name = "fight"},
+	--		{type = "int16", name = "level"},
+	--	},
+	--},
+    --
+	--{
+	--	define = "class", name = "MsgDBArenaDelMembers", category = "MSG_CATEGORY_DB_ARENA", id = 37 ,base = "MessageEx",
+	--	attributes =
+	--	{
+	--		{type = "int32", name = "tid"},
+	--		{type = "int32", name = "pid"},
+	--		{type = "int32", name = "signRank"},
+	--	},
+	--},
+	--
+	--{
+	--	define = "class", name = "MsgDBArenaUpdataRank", category = "MSG_CATEGORY_DB_ARENA", id = 38 ,base = "MessageEx", send_back = false,
+	--	attributes =
+	--	{
+	--		{type = "int32", name = "pid"},
+	--		{type = "int32", name = "rank"},
+	--	},
+	--},
+
+}
