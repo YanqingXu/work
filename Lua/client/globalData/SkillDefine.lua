@@ -195,9 +195,9 @@ SKILL_REGISTER[SKILL_RULE_ID.RULE_THREE_PHASE] = {
         [SKILL_RULE.nextDelay] = 0.3
     },
     [3] = {
-        [SKILL_RULE.show] = SKILL_SHOW_LOCAL.aim,
+        [SKILL_RULE.show] = SKILL_SHOW_LOCAL.scene_aim,
         [SKILL_RULE.moment] = SKILL_REG.phase4,
-        [SKILL_RULE.zorder] = SKILL_ORDER.player_up
+        [SKILL_RULE.zorder] = SKILL_ORDER.scene_top
     }
 }
 
@@ -560,8 +560,8 @@ SKILL_REGISTER[SKILL_RULE_ID.RULE_MO_JIA] = {
 -- 怪物技能 收击
 SKILL_REGISTER[SKILL_RULE_ID.RULE_MON_1] = {
     [1] = {
-        [SKILL_RULE.show] = SKILL_SHOW_LOCAL.aim,
-        [SKILL_RULE.zorder] = SKILL_ORDER.player_up,
+        [SKILL_RULE.show] = SKILL_SHOW_LOCAL.scene_aim,
+        [SKILL_RULE.zorder] = SKILL_ORDER.scene_top,
         [SKILL_RULE.moment] = SKILL_REG.phase4
     },
     [SKILL_REG.phase] = 1
@@ -577,8 +577,8 @@ SKILL_REGISTER[SKILL_RULE_ID.RULE_MON_2] = {
         [SKILL_RULE.actDir] = 1
     },
     [2] = {
-        [SKILL_RULE.show] = SKILL_SHOW_LOCAL.aim,
-        [SKILL_RULE.zorder] = SKILL_ORDER.player_up,
+        [SKILL_RULE.show] = SKILL_SHOW_LOCAL.scene_aim,
+        [SKILL_RULE.zorder] = SKILL_ORDER.scene_top,
         [SKILL_RULE.moment] = SKILL_REG.phase4
     },
     [SKILL_REG.phase] = 2
@@ -617,8 +617,8 @@ SKILL_REGISTER[SKILL_RULE_ID.RULE_MON_4] = {
         [SKILL_RULE.startVisf] = 1
     },
     [3] = {
-        [SKILL_RULE.show] = SKILL_SHOW_LOCAL.aim,
-        [SKILL_RULE.zorder] = SKILL_ORDER.player_up,
+        [SKILL_RULE.show] = SKILL_SHOW_LOCAL.scene_aim,
+        [SKILL_RULE.zorder] = SKILL_ORDER.scene_top,
         [SKILL_RULE.moment] = SKILL_REG.phase4
     },
     [SKILL_REG.phase] = 3
@@ -627,8 +627,8 @@ SKILL_REGISTER[SKILL_RULE_ID.RULE_MON_4] = {
 -- 怪物技能 受击
 SKILL_REGISTER[SKILL_RULE_ID.RULE_SKILL_1] = {
     [1] = {
-        [SKILL_RULE.show] = SKILL_SHOW_LOCAL.aim,
-        [SKILL_RULE.zorder] = SKILL_ORDER.player_up,
+        [SKILL_RULE.show] = SKILL_SHOW_LOCAL.scene_aim,
+        [SKILL_RULE.zorder] = SKILL_ORDER.scene_top,
         [SKILL_RULE.moment] = SKILL_REG.phase1,
         [SKILL_RULE.message] = 1
     },
@@ -657,8 +657,8 @@ SKILL_REGISTER[SKILL_RULE_ID.RULE_SKILL_3] = {
         [SKILL_RULE.startVisf] = 1
     },
     [2] = {
-        [SKILL_RULE.show] = SKILL_SHOW_LOCAL.aim,
-        [SKILL_RULE.zorder] = SKILL_ORDER.player_up,
+        [SKILL_RULE.show] = SKILL_SHOW_LOCAL.scene_host,
+        [SKILL_RULE.zorder] = SKILL_ORDER.scene_top,
         [SKILL_RULE.moment] = SKILL_REG.phase4,
         [SKILL_RULE.message] = 1
     },
@@ -725,8 +725,8 @@ SKILL_REGISTER[SKILL_RULE_ID.RULE_SKILL_7] = {
         [SKILL_RULE.startVisf] = 1
     },
     [2] = {
-        [SKILL_RULE.show] = SKILL_SHOW_LOCAL.aim,
-        [SKILL_RULE.zorder] = SKILL_ORDER.player_up,
+        [SKILL_RULE.show] = SKILL_SHOW_LOCAL.scene_host,
+        [SKILL_RULE.zorder] = SKILL_ORDER.scene_top,
         [SKILL_RULE.moment] = SKILL_REG.phase4,
         [SKILL_RULE.message] = 1
     },
@@ -849,9 +849,9 @@ SKILL_REGISTER[SKILL_RULE_ID.RULE_SKILL_QLS] = {
         [SKILL_RULE.move] = 1
     },
     [3] = {
-        [SKILL_RULE.show] = SKILL_SHOW_LOCAL.aim,
+        [SKILL_RULE.show] = SKILL_SHOW_LOCAL.scene_host,
         [SKILL_RULE.moment] = SKILL_REG.phase4,
-        [SKILL_RULE.zorder] = SKILL_ORDER.player_up,
+        [SKILL_RULE.zorder] = SKILL_ORDER.scene_top,
         [SKILL_RULE.nextDelay] = 0.2,
         [SKILL_RULE.actDir] = 1
     },
@@ -875,8 +875,8 @@ SKILL_REGISTER[SKILL_RULE_ID.RULE_SKILL_MTH] = {
         [SKILL_RULE.message] = 1
     },
     [2] = {
-        [SKILL_RULE.show] = SKILL_SHOW_LOCAL.aim,
-        [SKILL_RULE.zorder] = SKILL_ORDER.player_up,
+        [SKILL_RULE.show] = SKILL_SHOW_LOCAL.scene_aim,
+        [SKILL_RULE.zorder] = SKILL_ORDER.scene_top,
         [SKILL_RULE.moment] = SKILL_REG.phase4
     }
 }
@@ -1045,9 +1045,9 @@ SKILL_REGISTER[SKILL_RULE_ID.RULE_SKILL_YMFZ] = {
 SKILL_REGISTER[SKILL_RULE_ID.RULE_SKILL_SXS] = {
     [SKILL_REG.phase] = 1,
     [1] = {
-        [SKILL_RULE.show] = SKILL_SHOW_LOCAL.aim,
+        [SKILL_RULE.show] = SKILL_SHOW_LOCAL.scene_aim,
         [SKILL_RULE.moment] = SKILL_REG.phase4,
-        [SKILL_RULE.zorder] = SKILL_ORDER.player_up,
+        [SKILL_RULE.zorder] = SKILL_ORDER.scene_top,
         [SKILL_RULE.nextDelay] = 0.2,
         [SKILL_RULE.message] = 1
     },
@@ -1123,8 +1123,8 @@ SKILL_REGISTER[SKILL_RULE_ID.RULE_SKILL_ZHKL] = {
         [SKILL_RULE.message] = 1
     },
     [2] = {
-        [SKILL_RULE.show] = SKILL_SHOW_LOCAL.aim,
-        [SKILL_RULE.zorder] = SKILL_ORDER.player_up,
+        [SKILL_RULE.show] = SKILL_SHOW_LOCAL.scene_aim,
+        [SKILL_RULE.zorder] = SKILL_ORDER.scene_top,
         [SKILL_RULE.moment] = SKILL_REG.phase4
     }
 }
